@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/iteration10a.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <!-- Updated this section -->
+      <header
+        class="dashboard-header flex justify-between items-center bg-white p-4 shadow-md"
+      >
+        <div class="left-section flex items-center gap-4">
+          <div class="menu-icon">
+            <img src="images/menu-icon.svg" alt="Menu" class="icon w-6 h-6" />
+          </div>
+          <div class="logo flex items-center gap-2">
+            <img src="images/logo.svg" alt="Logo" class="logo-icon w-8 h-8" />
+            <div>
+              <h1 class="text-xl font-bold">Mirai</h1>
+              <p class="text-sm text-gray-500">Dashboard</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="search-bar flex items-center bg-gray-100 rounded-lg px-4 py-2"
+        >
+          <img
+            src="images/search-icon.svg"
+            alt="Search"
+            class="icon w-5 h-5 mr-2"
+          />
+          <input
+            type="text"
+            placeholder="Search Task"
+            class="bg-transparent outline-none w-full"
+          />
+          <div class="shortcut flex items-center ml-2">
+            <img
+              src="images/command-icon.svg"
+              alt="Command"
+              class="icon w-5 h-5"
+            />
+            <span class="ml-1 text-gray-500">K</span>
+          </div>
+        </div>
+        <div class="right-section flex items-center gap-4">
+          <img src="images/add-icon.svg" alt="Add" class="icon w-6 h-6" />
+          <img
+            src="images/bell-icon.svg"
+            alt="Notifications"
+            class="icon w-6 h-6"
+          />
+          <div class="profile-section flex items-center gap-2">
+            <img
+              src="images/image-1.png"
+              alt="Profile Picture"
+              class="profile-pic w-10 h-10 rounded-full"
+            />
+            <div class="profile-info text-right">
+              <p class="text-sm font-semibold">Kim Dokja</p>
+              <p class="text-xs text-gray-500">Seoul, Korea</p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- End of updated section -->
+      <main class="dashboard-main">
+        <section class="greeting-section">
+          <h1>Hey, need assistance? <span>👋</span></h1>
+          <p>Feel free to ask me anything!</p>
+          <img
+            src="images/microphone-icon.svg"
+            alt="Microphone"
+            class="microphone-icon"
+          />
+        </section>
+        <section class="reporting-section">
+          <img src="images/reporting-icon.svg" alt="Reporting" class="icon" />
+          <h2>Reporting</h2>
+          <p>
+            Unleash the Power of Precision: Elevate Your Business Insights with
+            Seamless Reporting on our SaaS Platform
+          </p>
+          <div class="reporting-graph"></div>
+        </section>
+        <section class="financial-overview">
+          <div class="monthly-income">
+            <h2>$69,455</h2>
+            <p>Monthly Income</p>
+          </div>
+          <div class="account-details">
+            <div class="visa-card">
+              <p>Linked to main account</p>
+              <p>**** 64534</p>
+              <select class="direct-debits-dropdown">
+                <option>Direct Debits</option>
+              </select>
+              <div class="buttons">
+                <button class="btn-receive">Receive</button>
+                <button class="btn-send">Send</button>
+              </div>
+            </div>
+            <div class="monthly-fee">
+              <p>Monthly regular fee</p>
+              <p>$27.00</p>
+            </div>
+          </div>
+        </section>
+        <section class="business-plans">
+          <h2>Business Plans</h2>
+          <ul>
+            <li>
+              <img
+                src="images/marketing-icon.svg"
+                alt="Marketing"
+                class="icon"
+              />
+              Marketing and Sales
+            </li>
+            <li>
+              <img
+                src="images/operations-icon.svg"
+                alt="Operations"
+                class="icon"
+              />
+              Operations and Supply Chain
+            </li>
+            <li>
+              <img src="images/product-icon.svg" alt="Product" class="icon" />
+              Product Development
+            </li>
+          </ul>
+        </section>
+        <section class="traffic-status">
+          <h2>Traffic Status</h2>
+          <div class="traffic-graph"></div>
+        </section>
+        <section class="sales-section">
+          <h2>Sales</h2>
+          <div class="sales-graph"></div>
+        </section>
+        <section class="stock-product">
+          <h2>Stock Product</h2>
+          <div class="stock-calendar"></div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

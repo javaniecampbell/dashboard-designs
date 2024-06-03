@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fc;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.left-section,
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon .icon,
+.logo-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo .logo-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.logo h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.logo p {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  width: 40%;
+}
+
+.search-bar .icon {
+  width: 20px;
+  height: 20px;
+}
+
+.search-bar input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.search-bar .shortcut {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar .shortcut .icon {
+  width: 20px;
+  height: 20px;
+}
+
+.search-bar .shortcut span {
+  margin-left: 4px;
+  color: #6c757d;
+}
+
+.right-section .icon {
+  width: 24px;
+  height: 24px;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.profile-info p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.profile-info p:first-child {
+  font-weight: 600;
+}
+
+.profile-info p:last-child {
+  color: #6c757d;
+  font-size: 12px;
+}
+
+.dashboard-main {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+
+/* Updated greeting section */
+
+.greeting-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+}
+
+.greeting-text {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.greeting-text h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.greeting-text p {
+  color: #6c757d;
+  font-size: 1rem;
+}
+
+.microphone-icon .icon {
+  width: 32px;
+  height: 32px;
+}
+
+.date-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.date-info p {
+  margin: 0;
+}
+
+.date-info p:first-child {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.date-info p:last-child {
+  color: #6c757d;
+  font-size: 1rem;
+}
+
+.date-range {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.date-range p {
+  color: #6c757d;
+  font-size: 1rem;
+}
+
+.date-range .icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 0.5rem;
+}
+
+/* End of updated greeting section */
+
+.reporting-section,
+.financial-overview,
+.business-plans,
+.traffic-status,
+.sales-section,
+.stock-product {
+  background-color: #f5f5f5;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.reporting-section .icon,
+.business-plans ul li .icon {
+  margin-right: 0.5rem;
+  width: 24px;
+  height: 24px;
+}
+
+.reporting-graph,
+.traffic-graph,
+.sales-graph,
+.stock-calendar {
+  height: 150px;
+  background-color: #e9ecef;
+  border-radius: 8px;
+}
+
+.financial-overview .monthly-income {
+  margin-bottom: 1rem;
+}
+
+.financial-overview .account-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.visa-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.visa-card .direct-debits-dropdown {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.visa-card .buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.visa-card .btn-receive,
+.visa-card .btn-send {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.visa-card .btn-receive {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.visa-card .btn-send {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.business-plans ul {
+  list-style: none;
+  padding: 0;
+}
+
+.business-plans ul li {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.business-plans ul li:last-child {
+  border-bottom: none;
+}

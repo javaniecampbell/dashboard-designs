@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/iteration10e.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <header
+        class="dashboard-header flex justify-between items-center bg-white p-4 shadow-md"
+      >
+        <div class="left-section flex items-center gap-4">
+          <div class="menu-icon">
+            <img src="images/menu-icon.svg" alt="Menu" class="icon w-6 h-6" />
+          </div>
+          <div class="logo flex items-center gap-2">
+            <img src="images/logo.svg" alt="Logo" class="logo-icon w-8 h-8" />
+            <div>
+              <h1 class="text-xl font-bold">Mirai</h1>
+              <p class="text-sm text-gray-500">Dashboard</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="search-bar flex items-center bg-gray-100 rounded-lg px-4 py-2"
+        >
+          <img
+            src="images/search-icon.svg"
+            alt="Search"
+            class="icon w-5 h-5 mr-2"
+          />
+          <input
+            type="text"
+            placeholder="Search Task"
+            class="bg-transparent outline-none w-full"
+          />
+          <div class="shortcut flex items-center ml-2">
+            <img
+              src="images/command-icon.svg"
+              alt="Command"
+              class="icon w-5 h-5"
+            />
+            <span class="ml-1 text-gray-500">K</span>
+          </div>
+        </div>
+        <div class="right-section flex items-center gap-4">
+          <img src="images/add-icon.svg" alt="Add" class="icon w-6 h-6" />
+          <img
+            src="images/bell-icon.svg"
+            alt="Notifications"
+            class="icon w-6 h-6"
+          />
+          <div class="profile-section flex items-center gap-2">
+            <img
+              src="images/image-1.png"
+              alt="Profile Picture"
+              class="profile-pic w-10 h-10 rounded-full"
+            />
+            <div class="profile-info text-right">
+              <p class="text-sm font-semibold">Kim Dokja</p>
+              <p class="text-xs text-gray-500">Seoul, Korea</p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section
+        class="greeting-section flex justify-between items-center bg-white p-4 rounded-lg shadow-md"
+      >
+        <div class="greeting-text flex items-center gap-4">
+          <h1 class="text-xl font-bold">
+            Hey, need assistance? <span role="img" aria-label="wave">👋</span>
+          </h1>
+          <p class="text-gray-500">Feel free to ask me anything!</p>
+        </div>
+        <div class="microphone-icon">
+          <img
+            src="images/microphone-icon.svg"
+            alt="Microphone"
+            class="icon w-8 h-8"
+          />
+        </div>
+        <div class="date-section flex items-center gap-4">
+          <div class="date-info text-right">
+            <p class="text-lg font-semibold">21</p>
+            <p class="text-sm text-gray-500">Thu, December</p>
+          </div>
+          <div
+            class="date-range bg-gray-100 px-4 py-2 rounded-lg flex items-center"
+          >
+            <p class="text-gray-600">Dec 21 - Sep 25</p>
+            <img
+              src="images/calendar-icon.svg"
+              alt="Calendar"
+              class="icon w-5 h-5 ml-2"
+            />
+          </div>
+        </div>
+      </section>
+      <!--  Updated this section -->
+      <main class="bento-grid grid grid-rows-2 gap-4 p-4">
+        <!-- Row 1 -->
+        <div class="row-1 grid grid-cols-7 gap-4">
+          <!-- Reporting Section -->
+          <section
+            class="reporting-section col-span-3 bg-white p-4 rounded-lg shadow-md"
+          >
+            <div class="section-header flex items-center justify-between">
+              <h2 class="text-xl font-bold">Reporting</h2>
+              <img
+                src="images/reporting-icon.svg"
+                alt="Reporting Icon"
+                class="icon w-6 h-6"
+              />
+            </div>
+            <p class="text-gray-500 mt-2">
+              Unleash the Power of Precision: Elevate Your Business Insights
+              with Seamless Reporting on our SaaS Platform
+            </p>
+            <div class="charts mt-4">
+              <!-- Add your chart here -->
+            </div>
+          </section>
+          <!-- Monthly Income Section -->
+          <section
+            class="monthly-income-section col-span-4 bg-white p-4 rounded-lg shadow-md"
+          >
+            <div class="section-header flex items-center justify-between">
+              <h2 class="text-xl font-bold">$69,455</h2>
+              <p class="text-gray-500">Monthly Income</p>
+            </div>
+            <div class="chart mt-4">
+              <!-- Add your chart here -->
+            </div>
+          </section>
+        </div>
+        <!-- Row 2 -->
+        <div class="row-2 grid grid-cols-5 gap-4">
+          <!-- Account Details Section -->
+          <section
+            class="account-details-section col-span-1 bg-white p-4 rounded-lg shadow-md"
+          >
+            <h2 class="sr-only text-xl font-bold">Account Details</h2>
+            <div
+              class="visa-card flex flex-col gap-2 neutral-100 p-4 rounded-2xl"
+            >
+              <div class="section-header w-full">
+                <img
+                  src="images/visa-logo.svg"
+                  alt="Visa Logo"
+                  class="w-12 h-8"
+                />
+                <select class="border border-gray-300 rounded-full px-2 py-1">
+                  <option>Direct Debits</option>
+                  <!-- Add more options here -->
+                </select>
+              </div>
+              <div class="visa-card-content flex flex-col gap-2">
+                <p class="text-gray-500">Linked to main account</p>
+                <p class="text-xl font-bold">**** 64534</p>
+              </div>
+              <div class="buttons mt-4 flex gap-4">
+                <button
+                  class="bg-gray-900 text-gray-200 px-4 py-2 rounded-full btn-receive"
+                >
+                  Receive
+                </button>
+                <button
+                  class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full btn-send"
+                >
+                  Send
+                </button>
+              </div>
+            </div>
+
+            <div class="account-info flex items-center flex-1 gap-2">
+              <div class="monthy-fee w-1/2">
+                <p class="text-gray-500">Monthly regular fee</p>
+                <p class="text-xl font-bold">$27.00</p>
+              </div>
+              <button class="text-blue-500 flex items-center gap-1 w-1/2">
+                <img
+                  src="images/edit-icon.svg"
+                  alt="Edit Icon"
+                  class="w-4 h-4"
+                />
+                Edit cards limitation
+              </button>
+            </div>
+          </section>
+          <!-- Add other sections for Row 2 here -->
+        </div>
+      </main>
+
+      <!-- End of updated section -->
+    </div>
+  </body>
+</html>
